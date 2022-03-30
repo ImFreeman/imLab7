@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -56,18 +57,24 @@
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(-1, 140);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.IsValueShownAsLabel = true;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.IsValueShownAsLabel = true;
+            series3.Legend = "Legend1";
+            series3.Name = "Раскрытые дела";
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.IsValueShownAsLabel = true;
+            series4.Legend = "Legend1";
+            series4.Name = "Инциденты";
+            this.chart1.Series.Add(series3);
+            this.chart1.Series.Add(series4);
             this.chart1.Size = new System.Drawing.Size(1129, 496);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -93,16 +100,36 @@
             // StartPopulation
             // 
             this.StartPopulation.Location = new System.Drawing.Point(139, 61);
+            this.StartPopulation.Maximum = new decimal(new int[] {
+            1410065408,
+            2,
+            0,
+            0});
             this.StartPopulation.Name = "StartPopulation";
             this.StartPopulation.Size = new System.Drawing.Size(120, 20);
             this.StartPopulation.TabIndex = 3;
+            this.StartPopulation.Value = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             // 
             // StartBudget
             // 
             this.StartBudget.Location = new System.Drawing.Point(139, 25);
+            this.StartBudget.Maximum = new decimal(new int[] {
+            1410065408,
+            2,
+            0,
+            0});
             this.StartBudget.Name = "StartBudget";
             this.StartBudget.Size = new System.Drawing.Size(120, 20);
             this.StartBudget.TabIndex = 4;
+            this.StartBudget.Value = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
             // 
             // label3
             // 
